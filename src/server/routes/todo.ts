@@ -70,13 +70,14 @@ todoRoutes.patch("/:id", async (c) => {
       return c.json({ error: "Todo not found" }, 404);
     }
 
-    todos[todoIndex] = {
+    const updatedTodo: Todo = {
       ...todos[todoIndex],
       ...validatedData,
       updatedAt: new Date().toISOString(),
     };
 
-    return c.json(todos[todoIndex]);
+    todos[todoIndex] = updatedTodo;
+    return c.json(updatedTodo);
   } catch (error) {
     if (error instanceof z.ZodError) {
       return c.json({ error: error.errors }, 400);
