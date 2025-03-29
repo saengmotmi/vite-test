@@ -7,15 +7,20 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "server": "tsx watch src/server/index.ts"
+    "server": "tsx watch src/server/index.ts",
+    "server:dev": "tsx watch src/server/index.ts",
+    "server:build": "tsc -p tsconfig.server.json",
+    "server:start": "node dist/server/index.js"
   },
   "dependencies": {
     "@hono/node-server": "^1.8.2",
     "@supabase/supabase-js": "^2.39.3",
+    "@types/node": "^22.13.14",
     "hono": "^4.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^7.0.0"
+    "react-router-dom": "^7.0.0",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.55",
