@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
+import { Home } from "../pages/Home/ui/Home";
 import Layout from "../widgets/TodoList/ui/Layout";
-import Home from "../pages/Home";
 
 function App() {
   return (

@@ -8,9 +8,19 @@ import todosRouter from "./routes/todos";
 
 const app = new Hono();
 
-// Middleware
+// Middleware - CORS 설정 강화
 app.use("*", logger());
-app.use("*", cors());
+app.use(
+  "*",
+  cors({
+    origin: ["http://localhost:5173", "http://127.0.0.1:5173"],
+    allowMethods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+    allowHeaders: ["Content-Type", "Authorization"],
+    exposeHeaders: ["Content-Length", "X-Kuma-Revision"],
+    maxAge: 600,
+    credentials: true,
+  })
+);
 app.use("*", prettyJSON());
 
 // Routes - 서비스 패턴 라우트만 사용
