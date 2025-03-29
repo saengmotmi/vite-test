@@ -966,6 +966,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tanstack/query-core@npm:5.70.0":
+  version: 5.70.0
+  resolution: "@tanstack/query-core@npm:5.70.0"
+  checksum: 10c0/477295a10fbae909dbfada411bde4af3176585afe619570547788b5f6990202369bc27cd997c358930b9cb0957676396bedb9d5e59987fbd99687d368826bd53
+  languageName: node
+  linkType: hard
+
+"@tanstack/query-devtools@npm:5.67.2":
+  version: 5.67.2
+  resolution: "@tanstack/query-devtools@npm:5.67.2"
+  checksum: 10c0/85172bb7cbca204e62507ffb72add4ff8f204b034ea0c6bb82cc44a00756ab196bd8a688b5e857911274aa5e7c467cdda6a393ebce6ba36ce8d471d5b52060fb
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query-devtools@npm:^5.70.0":
+  version: 5.70.0
+  resolution: "@tanstack/react-query-devtools@npm:5.70.0"
+  dependencies:
+    "@tanstack/query-devtools": "npm:5.67.2"
+  peerDependencies:
+    "@tanstack/react-query": ^5.70.0
+    react: ^18 || ^19
+  checksum: 10c0/9735e0d9c105cbf027c78ae133ae2d7105e184a7eb479ee5b2fd021e6328d73d192cbc0afda9b22c29f2c79bafc66afd68c160e479b7d319e3f44cb5ba4e9687
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query@npm:^5.70.0":
+  version: 5.70.0
+  resolution: "@tanstack/react-query@npm:5.70.0"
+  dependencies:
+    "@tanstack/query-core": "npm:5.70.0"
+  peerDependencies:
+    react: ^18 || ^19
+  checksum: 10c0/3c2a2f57b6857cd3f95de006e445440cabb2af7d3cce136da8dc6a963e6b8c2a16af6bed024af7a6a4642e08a38a6efe111d965b19356e48467133a5903a185c
+  languageName: node
+  linkType: hard
+
 "@types/babel__core@npm:^7.20.5":
   version: 7.20.5
   resolution: "@types/babel__core@npm:7.20.5"
@@ -3611,6 +3648,8 @@ __metadata:
     "@hono/node-server": "npm:^1.8.2"
     "@hono/zod-validator": "npm:^0.4.3"
     "@supabase/supabase-js": "npm:^2.39.3"
+    "@tanstack/react-query": "npm:^5.70.0"
+    "@tanstack/react-query-devtools": "npm:^5.70.0"
     "@types/node": "npm:^22.13.14"
     "@types/react": "npm:^18.2.55"
     "@types/react-dom": "npm:^18.2.19"
