@@ -1,0 +1,11 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+Technical Stack
+- hono for backend
+- react + react router v7 for frontend
+- supabase for database
+
+**Purpose:** Locks AI to a consistent tech stack, preventing unwanted deviations (e.g., JSON over SQL). This is my setup—yours might differ (e.g., add Rust or React).
